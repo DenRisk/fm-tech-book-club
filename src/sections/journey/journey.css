@@ -1,5 +1,4 @@
 .journey__content {
-    background-image: url("src/assets/images/pattern-light-bg.svg");
     background-color: var(--color-neutral-100);
     overflow: clip;
     position: relative;
