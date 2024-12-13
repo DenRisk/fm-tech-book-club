@@ -13,11 +13,17 @@ import heroMobileImage from '../../assets/images/image-hero-mobile.webp';
 import heroTabletImage from '../../assets/images/image-hero-tablet.webp';
 import heroDesktopImage from '../../assets/images/image-hero-desktop.webp';
 import glowImage from '../../assets/images/pattern-glow.svg';
+import patternLightBg from '../../assets/images/pattern-light-bg.svg';
 
 
 function Overview({scrollToMembership}) {
+
+    const style = {
+        backgroundImage: `url(${patternLightBg})`,
+    };
+
     return (
-        <section className='overview'>
+        <section className='overview' style={style}>
             <Container>
                 <header className='header'>
                     <Logo/>

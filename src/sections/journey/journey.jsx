@@ -4,6 +4,10 @@ import JourneyStep from '../../components/journey-step/journey-step.jsx';
 import Image from '../../components/image/image.jsx';
 import { motion } from 'framer-motion';
 
+// Images
+import patternLightBg from '../../assets/images/pattern-light-bg.svg';
+
+
 const staggerContainer = {
     hidden: { opacity: 0 },
     visible: {
@@ -21,10 +25,14 @@ const item = {
 
 function Journey() {
 
+    const style = {
+        backgroundImage: `url(${patternLightBg})`,
+    };
+
     return (
         <section className="journey">
             <Container>
-                <div className="journey__content">
+                <div className="journey__content" style={style}>
                     <h2 className="text-2 journey__title">Your tech reading journey</h2>
                     <motion.div
                         className='journey__steps'
