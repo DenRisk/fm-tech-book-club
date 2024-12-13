@@ -1,0 +1,38 @@
+.membership {
+    scroll-margin-top: 1.5rem;
+}
+
+.membership__content {
+    text-align: start;
+
+    @media (min-width: 1200px) {
+        text-align: center;
+    }
+}
+
+.membership__title {
+    margin-bottom: var(--spacing-300);
+
+    @media (min-width: 768px) {
+        margin-bottom: var(--spacing-500);
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: var(--spacing-800);
+    }
+}
+
+.membership__offers {
+    display: grid;
+    gap: var(--spacing-300);
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

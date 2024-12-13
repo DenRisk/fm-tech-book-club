@@ -3,7 +3,7 @@
     margin-inline: auto;
     padding: 0 var(--spacing-200);
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
         padding: 0 var(--spacing-400);
     }
 }

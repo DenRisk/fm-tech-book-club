@@ -6,8 +6,9 @@ import Icon from '../../components/icon/icon.jsx'
 import AvatarRating from '../../components/avatar-rating/avatar-rating.jsx'
 import Image from '../../components/image/image.jsx'
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
-function Overview() {
+function Overview({scrollToMembership}) {
     return (
         <section className='overview'>
             <Container>
@@ -26,7 +27,7 @@ function Overview() {
                             with
                             fellow tech enthusiasts. Get curated recommendations, join vibrant discussions, and level up
                             your skills one chapter at a time.</p>
-                        <CustomButton type='primary' fullWidth={true} maxWidth={380}>
+                        <CustomButton type='primary' fullWidth={true} maxWidth={380} onClick={scrollToMembership}>
                             <span>REVIEW MEMBERSHIP OPTIONS</span>
                             <Icon id='arrowDown' pointer={true}/>
                         </CustomButton>
@@ -35,8 +36,9 @@ function Overview() {
                     <motion.div
                         className='overview__image-container'
                         initial={{opacity: 0, x: 100}}
-                        animate={{opacity: 1, x: 0}}
                         transition={{duration: 0.5}}
+                        whileInView={{opacity: 1, x: 0}}
+                        viewport={{once: false, amount: 0.1}}
                     >
                         <Image
                             src='src/assets/images/image-hero-mobile.webp'
@@ -56,6 +58,10 @@ function Overview() {
             </div>
         </section>
     );
+}
+
+Overview.propTypes = {
+    scrollToMembership: PropTypes.func.isRequired
 }
 
 export default Overview;

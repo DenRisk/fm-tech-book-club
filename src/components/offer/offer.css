@@ -1,0 +1,50 @@
+.offer {
+    padding: var(--spacing-300);
+    background-color: var(--color-neutral-0);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: var(--border-radius-8);
+    position: relative;
+    overflow: clip;
+}
+
+.offer__label {
+    margin-bottom: var(--spacing-300);
+}
+
+.offer__timespan{
+    color: var(--color-neutral-700);
+}
+
+.offer__divider {
+    border-color: var(--color-neutral-200);
+    margin: var(--spacing-300) 0;
+}
+
+.offer__benefits {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-200);
+    margin-bottom: var(--spacing-400);
+    color: var(--color-neutral-700);
+}
+
+.offer__benefit {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-200);
+}
+
+.offer--highlight {
+    background-color: var(--color-neutral-100);
+
+    @media (min-width: 1200px) {
+        padding: var(--spacing-500) var(--spacing-300);    }
+}
+
+.offer__glow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    translate: 60% 50%;
+    pointer-events: none;
+}

@@ -4,7 +4,7 @@ This is a solution to the [Tech book club landing page challenge on Frontend Men
 
 ## Table of contents
 
-- [Journey](#overview)
+- [Footer](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -18,7 +18,7 @@ This is a solution to the [Tech book club landing page challenge on Frontend Men
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Journey
+## Footer
 
 ### The challenge
 
