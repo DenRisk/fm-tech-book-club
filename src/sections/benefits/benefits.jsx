@@ -4,6 +4,10 @@ import ReadonlyCheckbox from '../../components/readonly-checkbox/readonly-checkb
 import Image from '../../components/image/image.jsx';
 import { motion } from 'framer-motion';
 
+// Images
+import imageReadTogetherMobile from '../../assets/images/image-read-together-mobile.webp';
+import imageReadTogetherTablet from '../../assets/images/image-read-together-tablet.webp';
+import imageReadTogetherDesktop from '../../assets/images/image-read-together-desktop.webp';
 
 function Benefits() {
     return (
@@ -41,12 +45,12 @@ function Benefits() {
                         transition={{duration: 0.5}}
                     >
                         <Image
-                            src="src/assets/images/image-read-together-mobile.webp"
+                            src={imageReadTogetherMobile}
                             alt="people are reading a book"
                             sizes={{
-                                mobile: 'src/assets/images/image-read-together-mobile.webp',
-                                tablet: 'src/assets/images/image-read-together-tablet.webp',
-                                desktop: 'src/assets/images/image-read-together-desktop.webp',
+                                mobile: imageReadTogetherMobile,
+                                tablet: imageReadTogetherTablet,
+                                desktop: imageReadTogetherDesktop,
                             }}
                             loadingStrategy="lazy"
                         />

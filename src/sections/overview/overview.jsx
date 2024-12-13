@@ -8,6 +8,13 @@ import Image from '../../components/image/image.jsx'
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
+// Images
+import heroMobileImage from '../../assets/images/image-hero-mobile.webp';
+import heroTabletImage from '../../assets/images/image-hero-tablet.webp';
+import heroDesktopImage from '../../assets/images/image-hero-desktop.webp';
+import glowImage from '../../assets/images/pattern-glow.svg';
+
+
 function Overview({scrollToMembership}) {
     return (
         <section className='overview'>
@@ -41,11 +48,11 @@ function Overview({scrollToMembership}) {
                         viewport={{once: false, amount: 0.1}}
                     >
                         <Image
-                            src='src/assets/images/image-hero-mobile.webp'
+                            src={heroMobileImage}
                             sizes={{
-                                mobile: 'src/assets/images/image-hero-mobile.webp',
-                                tablet: 'src/assets/images/image-hero-tablet.webp',
-                                desktop: 'src/assets/images/image-hero-desktop.webp'
+                                mobile: heroMobileImage,
+                                tablet: heroTabletImage,
+                                desktop: heroDesktopImage
                             }}
                             alt='Studying people'
                             loadingStrategy='lazy'
@@ -54,7 +61,7 @@ function Overview({scrollToMembership}) {
                 </div>
             </Container>
             <div className='overview__glow'>
-                <Image src='src/assets/images/pattern-glow.svg' alt='glowing ellipse' loadingStrategy='lazy'/>
+                <Image src={glowImage} alt='glowing ellipse' loadingStrategy='lazy'/>
             </div>
         </section>
     );

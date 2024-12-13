@@ -1,12 +1,13 @@
 import './avatar-rating.css'
 import Icon from '../icon/icon.jsx'
 import Image from '../image/image.jsx'
+import avatarImage from '../../assets/images/image-avatars.webp';
 
 function AvatarRating() {
   return (
     <div className='avatar-rating'>
         <div className='avatar-rating__image-container'>
-            <Image src='src/assets/images/image-avatars.webp' alt='Avatar' loadingStrategy='lazy'/>
+            <Image src={avatarImage} alt='Avatar' loadingStrategy='lazy'/>
         </div>
         <div className='avatar-rating__ratings'>
             <div className='avatar-rating__stars'>

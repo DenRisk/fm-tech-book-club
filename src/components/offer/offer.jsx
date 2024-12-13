@@ -1,9 +1,11 @@
 import './offer.css'
-import Icon from '../icon/icon.jsx'
 import CustomButton from '../custom-button/custom-button.jsx'
 import Proptypes from 'prop-types'
 import ReadonlyCheckbox from '../readonly-checkbox/readonly-checkbox.jsx'
 import Image from '../image/image.jsx'
+
+// Images
+import patternGlow from '../../assets/images/pattern-glow.svg'
 
 function Offer({label, price, benefits, isHighlighted = false}) {
     return (
@@ -44,7 +46,7 @@ function Offer({label, price, benefits, isHighlighted = false}) {
                 isHighlighted && (
                     <div className='offer__glow'>
                         <Image
-                            src='src/assets/images/pattern-glow.svg'
+                            src={patternGlow}
                             alt='glowing ellipse'
                             loadingStrategy='lazy'/>
                     </div>

@@ -20,7 +20,7 @@ const Image = ({ src = '', alt = '', sizes, loadingStrategy = 'eager' }) => {
 };
 
 Image.propTypes = {
-    src: PropTypes.string, // Folder containing the images
+    src: PropTypes.string || PropTypes.object, // Folder containing the images
     alt: PropTypes.string, // Alt text for accessibility
     sizes: PropTypes.shape({
         mobile: PropTypes.string,

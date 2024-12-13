@@ -4,6 +4,12 @@ import Image from '../../components/image/image.jsx';
 import { motion } from 'framer-motion';
 import Icon from '../../components/icon/icon.jsx'
 
+// Images
+import imageNotAverageMobile from '../../assets/images/image-not-average-mobile.webp';
+import imageNotAverageTablet from '../../assets/images/image-not-average-tablet.webp';
+import imageNotAverageDesktop from '../../assets/images/image-not-average-desktop.webp';
+import imageCircle from '../../assets/images/pattern-circle.png';
+
 
 function Languages() {
     return (
@@ -20,7 +26,7 @@ function Languages() {
                             <span>Not your average book </span>
                             <span className='languages__circle-container'>
                                 <span>club</span>
-                                <Image src='src/assets/images/pattern-circle.png' alt='circle around text'/>
+                                <Image src={imageCircle} alt='circle around text'/>
                             </span>
                         </h2>
                         <p className='text-5-regular languages__paragraph'>Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and everything in between. Our discussions blend technical depth with practical applications.</p>
@@ -34,12 +40,12 @@ function Languages() {
                         transition={{ duration: 0.5 }}
                     >
                         <Image
-                            src="src/assets/images/image-not-average-mobile.webp"
+                            src={imageNotAverageMobile}
                             alt="people are reading a book"
                             sizes={{
-                                mobile: 'src/assets/images/image-not-average-mobile.webp',
-                                tablet: 'src/assets/images/image-not-average-tablet.webp',
-                                desktop: 'src/assets/images/image-not-average-desktop.webp',
+                                mobile: imageNotAverageMobile,
+                                tablet: imageNotAverageTablet,
+                                desktop: imageNotAverageDesktop,
                             }}
                             loadingStrategy="lazy"
                         />
