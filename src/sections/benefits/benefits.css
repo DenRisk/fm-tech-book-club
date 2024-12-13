@@ -1,5 +1,5 @@
 .benefits__content {
-    display: flex block;
+    display: flex;
     flex-direction: column;
     row-gap: var(--spacing-500);
 
