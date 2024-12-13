@@ -1,0 +1,10 @@
+.avatar-rating {
+    display: flex block;
+    align-items: center;
+    column-gap: var(--spacing-300);
+    margin-bottom: var(--spacing-800);
+}
+
+.avatar-rating__image-container {
+    max-width: 110px;
+}>

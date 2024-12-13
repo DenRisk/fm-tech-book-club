@@ -1,0 +1,10 @@
+.readonly-checkbox {
+    display: flex inline;
+    align-items: center;
+    column-gap: var(--spacing-200);
+    color: var(--color-neutral-700);
+
+    :nth-child(1) {
+        flex-shrink: 0;
+    }
+}

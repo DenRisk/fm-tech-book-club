@@ -1,8 +1,9 @@
 .custom-button {
     display: inline-flex;
-    place-items: center;
-    padding: var(--spacing-250) var(--spacing-300);
-    font-size: var(--font-size-lg);
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-250) var(--spacing-200);
+    font-size: var(--font-size-base);
     letter-spacing: var(--letter-spacing-2);
     font-weight: var(--font-weight-semibold);
     border-radius: var(--border-radius-8);
@@ -10,6 +11,10 @@
     transition: all 0.2s ease-in-out;
     column-gap: var(--spacing-200);
     border: 2px solid transparent;
+
+    @media (min-width: 1200px) {
+        font-size: var(--font-size-lg);
+    }
 }
 
 .custom-button--primary {
@@ -41,4 +46,8 @@
         outline-color: var(--color-neutral-0);
         outline: 2px solid var(--color-neutral-900);
     }
+}
+
+.custom-button--full-width {
+    width: 100%;
 }

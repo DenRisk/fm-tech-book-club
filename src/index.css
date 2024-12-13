@@ -1,2 +1,18 @@
 @import "styles/variables.css";
 @import 'styles/globals.css';
+@import "styles/utils.css";
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-500);
+    padding-bottom: var(--spacing-1000);
+
+    @media (min-width: 768px) {
+        row-gap: var(--spacing-1000);
+    }
+
+    @media (min-width: 1200px) {
+        row-gap: var(--spacing-1500);
+    }
+}

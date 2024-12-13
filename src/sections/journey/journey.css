@@ -1,0 +1,29 @@
+.journey__content {
+    background-image: url("src/assets/images/pattern-light-bg.svg");
+    background-color: var(--color-neutral-100);
+    overflow: clip;
+    position: relative;
+    padding: var(--spacing-1000) var(--spacing-400);
+    display: grid;
+    justify-items: center;
+}
+
+.journey__title {
+    margin-bottom: var(--spacing-800);
+}
+
+.journey__steps {
+    display: grid;
+    text-align: start;
+    gap: var(--spacing-600);
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+
+}
+
+.journey__glow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    translate: 60% 50%
+}

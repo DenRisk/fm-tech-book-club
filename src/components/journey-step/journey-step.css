@@ -1,0 +1,26 @@
+.journey-step__icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-400);
+}
+
+.journey-step__count-container {
+    border: 1px solid var(--color-neutral-900);
+    border-radius: var(--border-radius-4);
+    color: var(--color-neutral-900);
+    font-size: var(--font-size-2xl);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journey-step__label {
+    color: var(--color-neutral-900);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-1);
+    line-height: var(--line-height-130);
+}

@@ -1,14 +1,17 @@
-import Logo from './components/logo/logo.jsx'
-import CustomButton from './components/custom-button/custom-button.jsx'
+import Overview from './sections/overview/overview.jsx'
+import Benefits from './sections/benefits/benefits.jsx'
+import Languages from './sections/languages/languages.jsx'
+import Journey from './sections/journey/journey.jsx'
 
 function App() {
 
   return (
-    <>
-      <Logo />
-      <CustomButton type='primary'>Primary</CustomButton>
-        <CustomButton type='secondary'>Secondary</CustomButton>
-    </>
+      <main className='main-container'>
+          <Overview />
+          <Benefits />
+          <Languages />
+          <Journey />
+      </main>
   )
 }
 

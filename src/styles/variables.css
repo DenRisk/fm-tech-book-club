@@ -1,6 +1,6 @@
 :root {
     /* Max Page Width */
-    --max-page-width: 1440px;
+    --max-page-width: 1200px;
 
     /* Colors */
     --color-neutral-0: #ffffff;
@@ -68,6 +68,7 @@
     --spacing-600: 3rem;
     --spacing-800: 4rem;
     --spacing-1000: 5rem;
+    --spacing-1500: 7.5rem;
 
     /* Letter Spacing */
     --letter-spacing-1: -2px;
