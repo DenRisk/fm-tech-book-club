@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 
 // Images
 import patternLightBg from '../../assets/images/pattern-light-bg.svg';
+import glowImage from '../../assets/images/pattern-glow.svg';
+
 
 
 const staggerContainer = {
@@ -56,9 +58,9 @@ function Journey() {
                     </motion.div>
                     <div className='journey__glow'>
                         <Image
-                            src='src/assets/images/pattern-glow.svg'
+                            src={glowImage}
                             alt='glowing ellipse'
-                            loadingStrategy='lazy'
+                            loadingStrategy='eager'
                         />
                     </div>
                 </div>
