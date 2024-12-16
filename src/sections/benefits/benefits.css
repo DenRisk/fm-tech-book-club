@@ -1,4 +1,4 @@
-.benefits__content {
+.benefits__list {
     display: flex;
     flex-direction: column;
     row-gap: var(--spacing-500);

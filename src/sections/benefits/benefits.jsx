@@ -13,7 +13,7 @@ function Benefits() {
     return (
         <section className="benefits">
             <Container>
-                <div className="benefits__content">
+                <div className="benefits__list">
                     <motion.div
                         className="benefits__text-container"
                         initial={{opacity: 0}}
