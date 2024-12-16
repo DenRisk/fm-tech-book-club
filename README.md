@@ -14,8 +14,6 @@ This is a solution to the [Tech book club landing page challenge on Frontend Men
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Footer
 
 ### The challenge
