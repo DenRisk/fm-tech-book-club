@@ -1,5 +1,5 @@
 .avatar-rating {
-    display: flex block;
+    display: flex;
     align-items: center;
     column-gap: var(--spacing-300);
     margin-bottom: var(--spacing-800);

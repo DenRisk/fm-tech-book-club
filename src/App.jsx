@@ -2,9 +2,9 @@ import Overview from './sections/overview/overview.jsx'
 import Benefits from './sections/benefits/benefits.jsx'
 import Languages from './sections/languages/languages.jsx'
 import Journey from './sections/journey/journey.jsx'
-import Membership from './sections/membership/membership.jsx'
 import Rating from './sections/rating/rating.jsx'
 import Announcement from './sections/announcement/announcement.jsx'
+import Membership from './sections/membership/membership.jsx'
 import { useRef } from 'react';
 
 function App() {

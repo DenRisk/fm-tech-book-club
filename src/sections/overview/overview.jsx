@@ -1,12 +1,11 @@
 import './overview.css';
-import Logo from '../../components/logo/logo.jsx'
-import Container from '../../components/container/container.jsx'
-import CustomButton from '../../components/custom-button/custom-button.jsx'
-import Icon from '../../components/icon/icon.jsx'
-import AvatarRating from '../../components/avatar-rating/avatar-rating.jsx'
-import Image from '../../components/image/image.jsx'
-import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
+import Logo from '../../components/logo/logo.jsx';
+import Container from '../../components/container/container.jsx';
+import CustomButton from '../../components/custom-button/custom-button.jsx';
+import Icon from '../../components/icon/icon.jsx';
+import Image from '../../components/image/image.jsx'
 
 // Images
 import heroMobileImage from '../../assets/images/image-hero-mobile.webp';
@@ -44,7 +43,6 @@ function Overview({scrollToMembership}) {
                             <span>REVIEW MEMBERSHIP OPTIONS</span>
                             <Icon id='arrowDown' pointer={true}/>
                         </CustomButton>
-                        <AvatarRating/>
                     </motion.div>
                     <motion.div
                         className='overview__image-container'
